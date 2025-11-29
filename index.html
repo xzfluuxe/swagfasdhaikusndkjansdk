@@ -13,7 +13,7 @@
     <div id="aj_content">
         <header class="tm-header">
             <div class="tm-header-logo">
-                <a href="/" class="tm-logo js-header-logo js-logo js-random-logo js-logo-hoverable">
+                <a href="index.html" class="tm-logo js-header-logo js-logo js-random-logo js-logo-hoverable">
                     <i class="tm-logo-icon js-logo-icon">
                         <img src="images/icon.png" alt="Fragment" onerror="this.style.display='none'">
                     </i>
@@ -25,70 +25,34 @@
                     <div class="tm-header-tabs-indicator" id="tab-indicator"></div>
                     
                     <div class="tm-header-tabs tm-x-scrollable js-x-scrollable">
-                        <a href="#usernames" class="tm-header-tab" data-tab="usernames">
-                            Usernames
-                        </a>
-                        <a href="#numbers" class="tm-header-tab" data-tab="numbers">
-                            Numbers
-                        </a>
-                        <a href="#gifts" class="tm-header-tab" data-tab="gifts">
-                            Gifts
-                            <span class="tm-label-new tm-header-tab-label-new">New</span>
-                        </a>
-                        <a href="#stars" class="tm-header-tab tab-active" data-tab="stars">
-                            Stars
-                        </a>
-                        <a href="#premium" class="tm-header-tab" data-tab="premium">
-                            Premium
-                        </a>
+                        <a href="#" class="tm-header-tab" data-tab="usernames">Usernames</a>
+                        <a href="#" class="tm-header-tab" data-tab="numbers">Numbers</a>
+                        <a href="#" class="tm-header-tab" data-tab="gifts">Gifts</a>
+                        <a href="#" class="tm-header-tab tab-active" data-tab="stars">Stars</a>
+                        <a href="#" class="tm-header-tab" data-tab="premium">Premium</a>
                     </div>
                 </div>
             </div>
             <div class="tm-header-actions tm-header-actions-wide">
-                <button class="btn btn-default tm-header-action tm-header-button login-link" id="connect-telegram">
-                    <i class="icon icon-connect-telegram"></i>
+                <button class="btn btn-default tm-header-action tm-header-button" id="connect-telegram">
                     <span class="tm-button-label">Connect Telegram</span>
-                </button>
-            </div>
-            <div class="tm-header-actions tm-header-actions-thin">
-                <button class="btn btn-primary tm-header-action tm-header-button ton-auth-link" id="connect-ton">
-                    <i class="icon icon-connect-ton"></i>
-                    <span class="tm-button-label">Connect TON</span>
                 </button>
             </div>
         </header>
         
         <main class="tm-main">
+            <!-- Sections -->
             <section class="tm-main-intro tab-content" id="usernames-content" style="display: none;">
                 <h1 class="tm-main-intro-header">Usernames</h1>
                 <p class="tm-main-intro-text">
                     <b>Collect and trade unique usernames</b> in the Telegram ecosystem. Each username is a unique digital asset secured on the blockchain. <a href="connect-telegram.html" class="icon-after icon-link-more">Learn more</a>
                 </p>
             </section>
-            
             <section class="tm-section clearfix js-search-results tab-content" id="usernames-table" style="display: none;">
-                <div class="tm-section-header">
-                    <h2 class="tm-section-header-text">
-                        <span class="thin-only">Usernames</span><span class="wide-only">Available Usernames</span>
-                    </h2>
-                </div>
-                
                 <div class="tm-table-wrap js-autoscrollable">
                     <table class="table tm-table tm-table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="--wide-width:33%;--thin-width:55%">Username</th>
-                                <th style="--wide-width:23%;--thin-width:45%" class="thin-last-col">Price</th>
-                                <th style="--wide-width:44%" class="wide-last-col wide-only">Status</th>
-                            </tr>
-                        </thead>
-                        
                         <tbody class="tm-high-cells js-autoscroll-body">
-                            <tr class="tm-row-selectable">
-                                <td colspan="3" style="text-align: center; padding: 50px 20px; color: rgba(255, 255, 255, 0.5);">
-                                    Connect your Telegram account to view available usernames.
-                                </td>
-                            </tr>
+                            <tr><td colspan="3" style="text-align: center; padding: 50px;">Connect your Telegram account to view available usernames.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -96,34 +60,12 @@
 
             <section class="tm-main-intro tab-content" id="numbers-content" style="display: none;">
                 <h1 class="tm-main-intro-header">Numbers</h1>
-                <p class="tm-main-intro-text">
-                    <b>Collect and trade unique phone numbers</b> in the Telegram ecosystem. Each number is a unique digital asset secured on the blockchain. <a href="connect-telegram.html" class="icon-after icon-link-more">Learn more</a>
-                </p>
             </section>
-            
             <section class="tm-section clearfix js-search-results tab-content" id="numbers-table" style="display: none;">
-                <div class="tm-section-header">
-                    <h2 class="tm-section-header-text">
-                        <span class="thin-only">Numbers</span><span class="wide-only">Available Numbers</span>
-                    </h2>
-                </div>
-                
                 <div class="tm-table-wrap js-autoscrollable">
                     <table class="table tm-table tm-table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="--wide-width:33%;--thin-width:55%">Phone Number</th>
-                                <th style="--wide-width:23%;--thin-width:45%" class="thin-last-col">Price</th>
-                                <th style="--wide-width:44%" class="wide-last-col wide-only">Status</th>
-                            </tr>
-                        </thead>
-                        
                         <tbody class="tm-high-cells js-autoscroll-body">
-                            <tr class="tm-row-selectable">
-                                <td colspan="3" style="text-align: center; padding: 50px 20px; color: rgba(255, 255, 255, 0.5);">
-                                    Connect your Telegram account to view available numbers.
-                                </td>
-                            </tr>
+                            <tr><td colspan="3" style="text-align: center; padding: 50px;">Connect your Telegram account to view available numbers.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -131,34 +73,12 @@
 
             <section class="tm-main-intro tab-content" id="gifts-content" style="display: none;">
                 <h1 class="tm-main-intro-header">Gifts</h1>
-                <p class="tm-main-intro-text">
-                    <b>Collect and trade unique gifts</b> in the Telegram ecosystem. Each gift is a unique digital asset secured on the blockchain. <a href="connect-telegram.html" class="icon-after icon-link-more">Learn more</a>
-                </p>
             </section>
-            
             <section class="tm-section clearfix js-search-results tab-content" id="gifts-table" style="display: none;">
-                <div class="tm-section-header">
-                    <h2 class="tm-section-header-text">
-                        <span class="thin-only">Gifts</span><span class="wide-only">Available Gifts</span>
-                    </h2>
-                </div>
-                
                 <div class="tm-table-wrap js-autoscrollable">
                     <table class="table tm-table tm-table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="--wide-width:33%;--thin-width:55%">Gift</th>
-                                <th style="--wide-width:23%;--thin-width:45%" class="thin-last-col">Price</th>
-                                <th style="--wide-width:44%" class="wide-last-col wide-only">Status</th>
-                            </tr>
-                        </thead>
-                        
                         <tbody class="tm-high-cells js-autoscroll-body">
-                            <tr class="tm-row-selectable">
-                                <td colspan="3" style="text-align: center; padding: 50px 20px; color: rgba(255, 255, 255, 0.5);">
-                                    Connect your Telegram account to view available gifts.
-                                </td>
-                            </tr>
+                            <tr><td colspan="3" style="text-align: center; padding: 50px;">Connect your Telegram account to view available gifts.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -166,34 +86,12 @@
 
             <section class="tm-main-intro tab-content" id="stars-content">
                 <h1 class="tm-main-intro-header">Stars</h1>
-                <p class="tm-main-intro-text">
-                    <b>Collect and trade unique stars</b> in the Telegram ecosystem. Each star is a unique digital asset secured on the blockchain. <a href="connect-telegram.html" class="icon-after icon-link-more">Learn more</a>
-                </p>
             </section>
-            
             <section class="tm-section clearfix js-search-results tab-content" id="stars-table">
-                <div class="tm-section-header">
-                    <h2 class="tm-section-header-text">
-                        <span class="thin-only">Stars</span><span class="wide-only">Available Stars</span>
-                    </h2>
-                </div>
-                
                 <div class="tm-table-wrap js-autoscrollable">
                     <table class="table tm-table tm-table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="--wide-width:33%;--thin-width:55%">Star</th>
-                                <th style="--wide-width:23%;--thin-width:45%" class="thin-last-col">Price</th>
-                                <th style="--wide-width:44%" class="wide-last-col wide-only">Status</th>
-                            </tr>
-                        </thead>
-                        
                         <tbody class="tm-high-cells js-autoscroll-body">
-                            <tr class="tm-row-selectable">
-                                <td colspan="3" style="text-align: center; padding: 50px 20px; color: rgba(255, 255, 255, 0.5);">
-                                    No stars available. Connect your Telegram account to view your stars.
-                                </td>
-                            </tr>
+                            <tr><td colspan="3" style="text-align: center; padding: 50px;">No stars available. Connect your Telegram account to view your stars.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -201,34 +99,12 @@
 
             <section class="tm-main-intro tab-content" id="premium-content" style="display: none;">
                 <h1 class="tm-main-intro-header">Premium</h1>
-                <p class="tm-main-intro-text">
-                    <b>Get exclusive premium features</b> in the Telegram ecosystem. Premium membership gives you access to exclusive digital assets. <a href="connect-telegram.html" class="icon-after icon-link-more">Learn more</a>
-                </p>
             </section>
-            
             <section class="tm-section clearfix js-search-results tab-content" id="premium-table" style="display: none;">
-                <div class="tm-section-header">
-                    <h2 class="tm-section-header-text">
-                        <span class="thin-only">Premium</span><span class="wide-only">Premium Features</span>
-                    </h2>
-                </div>
-                
                 <div class="tm-table-wrap js-autoscrollable">
                     <table class="table tm-table tm-table-fixed">
-                        <thead>
-                            <tr>
-                                <th style="--wide-width:33%;--thin-width:55%">Feature</th>
-                                <th style="--wide-width:23%;--thin-width:45%" class="thin-last-col">Price</th>
-                                <th style="--wide-width:44%" class="wide-last-col wide-only">Status</th>
-                            </tr>
-                        </thead>
-                        
                         <tbody class="tm-high-cells js-autoscroll-body">
-                            <tr class="tm-row-selectable">
-                                <td colspan="3" style="text-align: center; padding: 50px 20px; color: rgba(255, 255, 255, 0.5);">
-                                    Connect your Telegram account to view premium features.
-                                </td>
-                            </tr>
+                            <tr><td colspan="3" style="text-align: center; padding: 50px;">Connect your Telegram account to view premium features.</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -236,93 +112,6 @@
         </main>
     </div>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabs = document.querySelectorAll('.tm-header-tab');
-            const indicator = document.getElementById('tab-indicator');
-            let isConnected = false;
-
-            function updateIndicator(activeTab) {
-                if (activeTab && indicator) {
-                    const width = activeTab.offsetWidth;
-                    const left = activeTab.offsetLeft;
-                    
-                    const scaleFactor = 0.8;
-                    const scaledWidth = width * scaleFactor;
-                    const scaledLeft = left + (width - scaledWidth) / 2;
-                    
-                    indicator.style.left = scaledLeft + 'px';
-                    indicator.style.width = scaledWidth + 'px';
-                }
-            }
-
-            function switchTab(tabName) {
-                document.querySelectorAll('.tab-content').forEach(content => {
-                    content.style.display = 'none';
-                });
-
-                tabs.forEach(tab => {
-                    tab.classList.remove('tab-active');
-                });
-
-                document.getElementById(tabName + '-content').style.display = 'block';
-                document.getElementById(tabName + '-table').style.display = 'block';
-
-                const activeTab = document.querySelector(`[data-tab="${tabName}"]`);
-                if (activeTab) {
-                    activeTab.classList.add('tab-active');
-                    setTimeout(() => updateIndicator(activeTab), 10);
-                }
-            }
-
-            tabs.forEach(tab => {
-                tab.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const tabName = this.getAttribute('data-tab');
-                    switchTab(tabName);
-                });
-            });
-
-            document.getElementById('connect-telegram').addEventListener('click', function() {
-                window.location.href = 'connect-telegram.html';
-            });
-
-            document.getElementById('connect-ton').addEventListener('click', function() {
-                isConnected = true;
-                updateConnectionState();
-                alert('TON connection dialog would open here');
-            });
-
-            function updateConnectionState() {
-                if (isConnected) {
-                    document.querySelectorAll('.tm-high-cells td[colspan="3"]').forEach(td => {
-                        td.innerHTML = 'No items available at the moment. Check back later.';
-                    });
-                }
-            }
-
-            setTimeout(() => {
-                updateIndicator(document.querySelector('.tm-header-tab.tab-active'));
-            }, 100);
-
-            window.addEventListener('resize', function() {
-                const activeTab = document.querySelector('.tm-header-tab.tab-active');
-                if (activeTab) {
-                    setTimeout(() => updateIndicator(activeTab), 10);
-                }
-            });
-        });
-        <button onclick="sendData()">Send to Bot</button>
-
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-    Telegram.WebApp.ready();
-
-    function sendData() {
-        const data = { phone: "+1234567" };
-        Telegram.WebApp.sendData(JSON.stringify(data));
-    }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
